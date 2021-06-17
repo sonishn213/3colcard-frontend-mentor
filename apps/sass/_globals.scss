@@ -1,0 +1,34 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  width: 100%;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  font-size: 1em;
+  padding: 172px 260px;
+  background-color: $very-light-gray;
+}
+// h1 {
+//   font-family: $heading-font;
+// }
+
+p {
+  font-family: $body-font;
+  color: $transparent-white;
+  font-weight: lighter;
+}
+h1 {
+  color: $very-light-gray;
+  font-family: $heading-font;
+}
+.flex {
+  display: flex;
+}

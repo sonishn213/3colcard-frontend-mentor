@@ -1,0 +1,20 @@
+@mixin colbgcolor($col) {
+  @if ($col==1) {
+    background-color: $bright-orange;
+    .button {
+      color: $bright-orange;
+    }
+  }
+  @if ($col==2) {
+    background-color: $dark-cyan;
+    .button {
+      color: $dark-cyan;
+    }
+  }
+  @if ($col==3) {
+    background-color: $very-dark-cyan;
+    .button {
+      color: $very-dark-cyan;
+    }
+  }
+}

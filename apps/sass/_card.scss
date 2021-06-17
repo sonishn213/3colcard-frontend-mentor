@@ -1,0 +1,54 @@
+@import "mixins";
+.card {
+  width: 100%;
+
+  & > div {
+    width: calc(100% / 3);
+    padding: 48px;
+
+    & .heading {
+      font-size: 2.429rem;
+      text-transform: uppercase;
+      margin-top: 38px;
+      line-height: 0.9;
+    }
+    & .para {
+      display: block;
+      line-height: 1.7;
+      font-size: 0.94rem;
+      margin-top: 32px;
+      opacity: 0.8;
+    }
+    & .button {
+      display: block;
+      font-family: $body-font;
+      padding: 15px 32px;
+      border: 0;
+      border-radius: 50px;
+      font-size: 0.94rem;
+      margin-top: 82px;
+      background-color: $very-light-gray;
+      cursor: pointer;
+    }
+    & .button:hover {
+      //   $very-light-gray;
+      background-color: rgba(0, 0, 0, 0);
+      color: $very-light-gray !important;
+      box-shadow: inset 0 0 0 2.5px $very-light-gray;
+    }
+  }
+  $radius: 8px;
+  & > div:nth-child(1) {
+    @include colbgcolor(1);
+    border-top-left-radius: $radius;
+    border-bottom-left-radius: $radius;
+  }
+  & > div:nth-child(2) {
+    @include colbgcolor(2);
+  }
+  & > div:nth-child(3) {
+    @include colbgcolor(3);
+    border-top-right-radius: $radius;
+    border-bottom-right-radius: $radius;
+  }
+}

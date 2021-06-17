@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-size: 1em;
+  padding: 172px 260px;
+  background-color: #f2f2f2;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: lighter;
+}
+
+h1 {
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", cursive;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card {
+  width: 100%;
+}
+
+.card > div {
+  width: calc(100% / 3);
+  padding: 48px;
+}
+
+.card > div .heading {
+  font-size: 2.429rem;
+  text-transform: uppercase;
+  margin-top: 38px;
+  line-height: 0.9;
+}
+
+.card > div .para {
+  display: block;
+  line-height: 1.7;
+  font-size: 0.94rem;
+  margin-top: 32px;
+  opacity: 0.8;
+}
+
+.card > div .button {
+  display: block;
+  font-family: "Lexend Deca", sans-serif;
+  padding: 15px 32px;
+  border: 0;
+  border-radius: 50px;
+  font-size: 0.94rem;
+  margin-top: 82px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.card > div .button:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #f2f2f2 !important;
+  -webkit-box-shadow: inset 0 0 0 2.5px #f2f2f2;
+          box-shadow: inset 0 0 0 2.5px #f2f2f2;
+}
+
+.card > div:nth-child(1) {
+  background-color: #e38826;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.card > div:nth-child(1) .button {
+  color: #e38826;
+}
+
+.card > div:nth-child(2) {
+  background-color: #006970;
+}
+
+.card > div:nth-child(2) .button {
+  color: #006970;
+}
+
+.card > div:nth-child(3) {
+  background-color: #004241;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.card > div:nth-child(3) .button {
+  color: #004241;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    padding: 88px 24px;
+  }
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card > div {
+    width: 100%;
+  }
+  .card .button {
+    margin-top: 26px !important;
+  }
+  .card > div:nth-child(1) {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 8px;
+  }
+  .card > div:nth-child(3) {
+    background-color: #004241;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  .card > div:nth-child(3) .button {
+    color: #004241;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

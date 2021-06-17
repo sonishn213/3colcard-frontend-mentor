@@ -1,0 +1,26 @@
+@media screen and (max-width: 1000px) {
+  body {
+    padding: 88px 24px;
+  }
+  .card {
+    flex-direction: column;
+    & > div {
+      width: 100%;
+    }
+    & .button {
+      margin-top: 26px !important;
+    }
+    $radius: 8px;
+    & > div:nth-child(1) {
+      border-top-left-radius: $radius;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: $radius;
+    }
+    & > div:nth-child(3) {
+      @include colbgcolor(3);
+      border-top-right-radius: 0;
+      border-bottom-right-radius: $radius;
+      border-bottom-left-radius: $radius;
+    }
+  }
+}
